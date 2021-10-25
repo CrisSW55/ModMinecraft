@@ -1,0 +1,20 @@
+{
+  "_comment" : "Look up translation key to find minecraft items",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "X#X",
+    "XXX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:oak_log"
+    },
+    "#": {
+      "item": "minecraft:oak_sapling"
+    }
+  },
+  "result": {
+    "item": "mymod:cherryblossom_block"
+  }
+}
