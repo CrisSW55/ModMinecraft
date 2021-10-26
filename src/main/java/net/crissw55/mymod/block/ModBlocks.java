@@ -1,6 +1,7 @@
 package net.crissw55.mymod.block;
 
 import net.crissw55.mymod.MyMod;
+import net.crissw55.mymod.block.custom.FirestoneBlock;
 import net.crissw55.mymod.item.ModItemGroup;
 import net.crissw55.mymod.item.ModItems;
 import net.minecraft.block.AbstractBlock;
@@ -29,6 +30,13 @@ public class ModBlocks {
                     .harvestTool(ToolType.PICKAXE).sound(SoundType.WOOD)
                     .setRequiresTool()
             ));
+    public static final RegistryObject<Block> FIRESTONE_BLOCK
+            = registerBlock("firestone_block",
+            () -> new FirestoneBlock(AbstractBlock.Properties
+                    .create(Material.IRON).harvestLevel(1)
+                    .harvestTool(ToolType.PICKAXE))
+
+            );
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

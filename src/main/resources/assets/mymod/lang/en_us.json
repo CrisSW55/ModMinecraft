@@ -1,6 +1,7 @@
 {
   "item.mymod.squirtletoy" : "SquirtleToy",
   "block.mymod.cherryblossom_block" : "CherryBlossom Block",
+  "block.mymod.firestone_block" : "FireStone Block",
 
   "itemGroup.myModTab" : "My Mod"
 

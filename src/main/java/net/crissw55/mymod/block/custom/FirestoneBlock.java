@@ -21,8 +21,23 @@ public class FirestoneBlock extends Block {
     @SuppressWarnings("deprecation")
 
     @Override
-    public ActionResultType onBlockActivated(BlockState blockState, World worldPos, BlockPos pos, PlayerEntity playerEntity, Hand hand, BlockRayTraceResult blockRayTraceResult) {
-        return super.onBlockActivated(blockState, worldPos, pos, playerEntity, hand, blockRayTraceResult);
+    public ActionResultType onBlockActivated(BlockState blockState, World worldIn, BlockPos pos, PlayerEntity playerEntity, Hand handIn, BlockRayTraceResult blockRayTraceResult) {
+        if(!worldIn.isRemote){
+            if(handIn == Hand.MAIN_HAND){
+                System.out.println("Right clicked main handIn!");
+
+
+            }
+            if(handIn == Hand.OFF_HAND){
+                System.out.println("Left clicked off hand!");
+
+
+            }
+
+        }
+
+
+        return super.onBlockActivated(blockState, worldIn, pos, playerEntity, handIn, blockRayTraceResult);
     }
 
     @Override
