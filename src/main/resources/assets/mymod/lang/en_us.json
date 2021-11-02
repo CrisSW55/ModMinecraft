@@ -1,5 +1,7 @@
 {
   "item.mymod.squirtletoy" : "SquirtleToy",
+  "item.mymod.coal_sword.name" : "Coal Sword",
+  "item.mymod.redstone_sword.name" : "Redstone Sword",
   "block.mymod.cherryblossom_block" : "CherryBlossom Block",
   "block.mymod.firestone_block" : "FireStone Block",
 
