@@ -1,9 +1,14 @@
 {
   "item.mymod.squirtletoy" : "SquirtleToy",
-  "item.mymod.coal_sword.name" : "Coal Sword",
-  "item.mymod.redstone_sword.name" : "Redstone Sword",
+  "item.mymod.coal_sword" : "Coal Sword",
+  "item.mymod.redstone_sword" : "Redstone Sword",
   "block.mymod.cherryblossom_block" : "CherryBlossom Block",
   "block.mymod.firestone_block" : "FireStone Block",
+
+  "block.mymod.cherryblossom_log" : "CherryBlossom Log",
+  "block.mymod.cherryblossom_leaves" : "CherryBlossom Leaves",
+  "block.mymod.cherryblossom_sapling": "CherryBlossom Sapling",
+
 
   "itemGroup.myModTab" : "My Mod"
 

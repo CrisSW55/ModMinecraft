@@ -5,7 +5,7 @@ import net.minecraft.item.ItemStack;
 
 public class ModItemGroup  {
 
-    String resourcePath = "resources/assets/mymod/textures/item/squirtletoy.png";
+    String resourcePath = "resources/assets/mymod/textures/item/redstone_sword.png";
 
     public static final ItemGroup MyModGroup = new ItemGroup("myModTab") {
         @Override

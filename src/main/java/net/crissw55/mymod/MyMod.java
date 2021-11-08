@@ -4,6 +4,8 @@ import net.crissw55.mymod.block.ModBlocks;
 import net.crissw55.mymod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -50,13 +52,15 @@ public class MyMod
 
     private void setup(final FMLCommonSetupEvent event)
     {
-        // some preinit code
+//        RenderTypeLookup.setRenderLayer(ModBlocks.CHERRYBLOSSOM_LEAVES.get(), RenderType.getCutout());
+//        RenderTypeLookup.setRenderLayer(ModBlocks.CHERRYBLOSSOM_LEAVES.get(), RenderType.getCutoutMipped());
+
         LOGGER.info("HELLO FROM PREINIT");
         LOGGER.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
-        // do something that can only be done on the client
+        RenderTypeLookup.setRenderLayer(ModBlocks.CHERRYBLOSSOM_LEAVES.get(), RenderType.getTranslucent());
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

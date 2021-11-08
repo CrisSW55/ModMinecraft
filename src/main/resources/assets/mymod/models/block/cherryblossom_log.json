@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "mymod:block/cherryblossom_log_top",
+    "side": "mymod:block/cherryblossom_log"
+  }
+}

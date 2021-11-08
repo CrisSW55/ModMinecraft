@@ -18,8 +18,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SQUIRTLE_TOY = ITEMS.register("squirtletoy",
             () -> new Item(new Item.Properties().group(ModItemGroup.MyModGroup)));
-    public static final RegistryObject<Item> Redstone_Sword = ITEMS.register("redstone_sword",
-            () -> new RedstoneSword(new IItemTierClass(),2,1,new Item.Properties().group(ModItemGroup.MyModGroup)));
+    public static final RegistryObject<Item> REDSTONE_SWORD = ITEMS.register("redstone_sword",
+            () -> new RedstoneSword(new IItemTierClass(),0,0,new Item.Properties().group(ModItemGroup.MyModGroup)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

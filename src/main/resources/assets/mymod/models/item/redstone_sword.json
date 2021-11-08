@@ -1,6 +1,7 @@
 {
-  "parent": "item/generated",
+  "parent": "item/handheld",
   "textures": {
-    "layer0": "mymod:item/redstone_sword.json"
+    "layer0": "mymod:item/redstone_sword"
   }
 }
+

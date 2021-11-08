@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "mymod:block/acacia_sapling"
+  }
+}
